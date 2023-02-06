@@ -9,16 +9,16 @@ export default function Home(props) {
 
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
-    const [posts, setPosts] = useState(props.posts)
+    // const [posts, setPosts] = useState(props.posts)
 
-    useEffect(() => {
-      setPosts(props.posts)
-    }, [props.posts])
+    // useEffect(() => {
+    //   setPosts(props.posts)
+    // }, [props.posts])
 
     const handleSubmit = async (e) => {
       e.preventDefault()
       const res = await axios.post('/api/posts', { title, content })
-      setPosts([...posts, res.data])
+      // setPosts([...posts, res.data])
       console.log(res.data)
     }
 
