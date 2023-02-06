@@ -276,3 +276,35 @@
     transform: rotate(0deg);
   }
 }
+
+/* AUTHOR */
+.wrapper {
+  background-color: #c6afaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.heading1 {
+  padding-bottom: 2rem;
+  color: black;
+}
+
+.form {
+  width: 50%;
+  max-width: none;
+}
+.input,
+.textarea {
+  background-color: #d4d4d4;
+  color: black;
+}
+
+.postBox {
+  margin: 1rem 0;
+}
