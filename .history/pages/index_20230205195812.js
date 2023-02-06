@@ -1,7 +1,6 @@
 // pages/index.js
 import { prisma } from '../server/db/client'
 import { useState } from 'react'
-import axios from 'axios'
 
 export default function Home({posts}) {
   const [title, setTitle] = useState('')
@@ -9,10 +8,8 @@ export default function Home({posts}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const res = await axios.post('/api/posts', { title, content })
-    console.log(res.data)
+    console.log({title, content})
   }
-
   return (
     <div>
       <h1>Home</h1>
