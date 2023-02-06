@@ -306,13 +306,5 @@
 }
 
 .postBox {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: 40%;
-  margin: 1rem auto;
-}
-
-.postBox:first-of-type {
-  margin-top: 3rem;
+  margin: 1rem 0;
 }
